@@ -1,0 +1,78 @@
+<?php
+    session_start();
+
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+
+    $logado = $_SESSION['email'];
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>FORMA DE PAGAMENTO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/cadastra.css">
+
+        
+    </head>
+    <body>
+
+    
+
+
+      <div class="questionario">
+
+       <div class="d-flex">
+           <a href="../prog/sair.php" class="btn btn-danger">< SAIR</a>
+       </div>  
+
+      <div class="titulo">
+         <h1>FORMA DE PAGAMENTO</h1>
+      </div>
+
+         <div class="form-inner">
+
+            <form action="#" class="signup" method="POST">
+
+                  
+               <div class="caixa">
+                  <label class="ti">Nome completo </label><span class="obg">*</span>
+                  <input class="box" type="text" name="nome" id="nome" required>
+               </div>
+
+               <div class="caixa">
+                  <label class="ti">E-mail </label><span class="obg">*</span>
+                  <input class="box" type="text"name="email" id="email" required>
+               </div>
+
+               <div class="caixa">
+                  <label class="ti">Senha </label><span class="obg">*</span>
+                  <input class="box" type="password" name="senha" id="senha" required>
+               </div>
+
+              
+
+               <div class="caixa">
+                  <label class="ti">Endereço </label><span class="obg">*</span>
+                  <input class="box" type="text" name="endereco" id="endereco" required>
+               </div>
+
+               <div class="enviar">
+                  <a type="submit" value="Cadastrar" id="submit" name="submit">Finalizar pedido</a>
+               </div>
+
+            </form>          
+         </div>
+      </div>
+        
+
+    </body>
+</html>
