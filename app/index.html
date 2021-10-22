@@ -45,7 +45,7 @@
           <input type="submit" name="submit" value="ENTRAR"/>
 
           <div class="help">
-            <a href="cadastra2.php" class="ajuda">Criar conta</a>
+            <a href="cadastra.php" class="ajuda">Criar conta</a>
           </div>
         </form>
        
@@ -1080,8 +1080,43 @@
 
 
 
+<!---------------------------------------------------------------RODAPÉ----------------------------------------->
+<footer class="footer">
+  <div class="contfooter">
+      <div class="row">
 
+          <div class="footer-col">
+              <h4>Inicio</h4>
+              <p><a href="#">Perfumes</a></p>
+              <p><a href="#">Promoções</a></p>
+              <p><a href="#">Refil</a></p>
+              <p><a href="#">Kits</a></p>
+          </div>
 
+          <div class="footer-col">
+              <h4>Suporte</h4>
+              <p><a href="#">Sobre nós</a></p>
+              <p><a href="#">Duvidas Frequentes</a></p>
+          </div>
+
+          <div class="footer-col">
+              <h4>Contato</h4>
+              <p><a href="#">Telefone: (11) 55-91111-1111</a></p>
+              <p><a href="#">Email: Elementary@gmail.com</a></p>
+          </div>
+          
+          <div class="footer-col">
+              <h4>Social</h4>
+              <div class="social-links">
+              <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-google" aria-hidden="true"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
 
 
 
@@ -1162,7 +1197,7 @@
 
 window.addEventListener('scroll', function() {
   let scroll = document.querySelector('.scrollTop')
-    scroll.classList.toggle('active', window.scrollY > 450)
+    scroll.classList.toggle('active', window.scrollY > 100)
 })
 
 function backTop() {

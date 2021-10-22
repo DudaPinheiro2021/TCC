@@ -12,12 +12,13 @@ html{
 }
 
 body{
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    background: cornsilk;
-    font-size: 3.0rem;
     width: 100%;
+    background: cornsilk;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-size: 3.0rem;
+    
 }
 
 .nome{
@@ -25,7 +26,7 @@ body{
     margin-top: 1rem;
     font-size: 3.0rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    letter-spacing: 2px;
+    letter-spacing: 0.2rem;
 }
 
 
@@ -36,22 +37,21 @@ body{
 }
 
 header a svg{
-    width: 30px;
-    height: 30px;
-    margin-right: 2.0rem;
+    width: 3rem;
+    height: 3rem;
     color: rgb(0, 0, 0);
+    margin-right: 2.0rem;
     transition: 0.5s;
 }
 
 .header{
     background-color: #F6D5B6;
-    display: flex;
-    justify-content: space-between;
+    display: flex; 
     align-items: center;
-    z-index: 1;
+    justify-content: space-between;
     padding-left: 5rem;
     padding-right: 5rem;
-    
+    z-index: 1;
 }
 
 .marca{
@@ -60,8 +60,7 @@ header a svg{
 
 .marca li a{
     display: block;
-    margin-left: 10px;
-
+    margin-left: 1rem;
 }
 
 header nav{
@@ -72,27 +71,27 @@ header nav{
 /*CABEÇALHO INF*/
 
 nav.cabecalho{
-    background-color: #F6D5B6;
-    margin-top: 5rem;
-    position: fixed;
     width: 100%;
     height: 6.8rem;
+    background-color: #F6D5B6;
+    position: fixed;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     transition: 0.8s;
-    letter-spacing: 1px;
-    z-index: 2;
+    letter-spacing: 0.1rem;
+    margin-top: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
     padding-top: 3rem;
+    z-index: 2;
 }
 
 ul{
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 ul li{
@@ -101,16 +100,25 @@ ul li{
 
 .links a{
     color: rgb(0, 0, 0);
-    padding: 0 20px;
+    padding: 0 2rem;
     font-size: 1.4rem;
+    text-decoration: none;
 }
 
+.links a:hover{
+    color: #527471;
+    text-decoration: none;
+}
 
 .conf{
-    width: 30px;
-    height: 30px;
-    margin-right: 2.0rem;
+    width: 3rem;
+    height: 3rem;
     color: rgb(0, 0, 0);
+    margin-right: 2.0rem;
+}
+
+.conf:hover{
+    color: #000;
 }
 
 .menu-section nav{
@@ -125,32 +133,32 @@ ul li{
 .arrow-up{
     width: 0;
     height: 0;
+    right: 67px;
+    top: 40px;
+    display: none;
     position: absolute;
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-bottom: 20px solid rgb(255, 255, 255);
-    right: 67px;
-    top: 40px;
-    z-index: 5;
-    display: none;
     transition: 1s;
+    z-index: 5;
 }
 
 
 .login{
-    position: absolute;
-    width: 280px;
+    width: 28rem;
     height: auto;
+    right: 6.5rem;
+    top: 4.8rem;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 5px 3px rgba(128, 128, 128, 0.247);
-    right: 65px;
-    top: 48px;
+    display: none;
+    position: absolute;
     border-radius: 2px;
     align-items: center;
-    z-index: 4;
-    display: none;
     transition: 1s;
     text-align: center;
+    z-index: 4;
 }
 
 .ent{
@@ -160,49 +168,48 @@ ul li{
 }
 
 .login>form{
-    width: 250px;
-    margin: 25px auto;
-    font-size: 10px;
+    width: 250rem;
+    margin: 2.5rem auto;
+    font-size: 1rem;
 }
 
 input[type="email"],input[type="text"],
 input[type="password"]{
-    width: 220px;
-    height: 30px;
+    width: 22rem;
+    height: 3rem;
     color: rgb(0, 0, 0);
-    padding: 10px 9px;
+    padding: 1rem 0.9rem;
     outline: none;
     border: 1px solid #d6d6d6;
-    margin-bottom: 10px;
-    margin-top: 5px;
-    font-size: 12px;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
 input[type="submit"]{
-    width: 220px;
-    height: 35px;
+    width: 220rem;
+    height: 3.5rem;
     background: #527471;
-    font-size: 12px;
+    font-size: 1.2rem;
     letter-spacing: 0.5px;
     font-weight: bold;
     color: white;
     outline: none;
     border: 0px;
-    border-radius: 3px;
+    border-radius: 0.3rem;
     
 }
 
 input[type="email"]:hover, input[type="password"]:hover{
     transition: 0.3s;
-    border: 1px solid #000000;
+    border: 0.1rem solid #000000;
 }
 
 .help,.ajuda{
-    margin-top: 15px;
-    margin-bottom: -13px;
-    
-    font-size: 10px; 
     color: #999999;
+    margin-top: 1.5rem;
+    margin-bottom: -1.3rem;
+    font-size: 1rem; 
     align-items: center;
     text-align: center;
     justify-content: center;
@@ -270,7 +277,10 @@ input[type="email"]:hover, input[type="password"]:hover{
     color: #527471;
     margin-left: -5rem;
 }
-
+.intro a:hover{
+    text-decoration: none;
+    color: #527471;
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
@@ -337,7 +347,10 @@ input[type="email"]:hover, input[type="password"]:hover{
     color: #527471;
     margin-right: -7rem;
 }
-
+.meio a:hover{
+    color: #527471;
+    text-decoration: none;
+}
 
 
 
@@ -518,6 +531,10 @@ h1.ti{
     text-align: right;
     font-size: 1.4rem;
 }
+.ver:hover{
+    color: #527471;
+    text-decoration: none;
+}
 
 
 /* setas*/
@@ -555,7 +572,7 @@ img{
 .scrollTop{
     outline: none;
     border: 0;
-    background-color: #F6D5B6;
+    background-color: #f0d0b2;
     width: 4rem;
     height: 4rem;
     padding: 8px;
@@ -625,7 +642,7 @@ p{
 }
 
 .footer{
-    background-color: #f0c9a6;
+    background-color: #F6D5B6;
     padding: 8rem 4rem;
     padding-bottom: 4rem;
 }
@@ -1085,8 +1102,5 @@ p{
     .footer-col h4::before{
         display: none;
     }
-
-
-
 
 }

@@ -24,7 +24,7 @@ if($result==1){
     session_start();
     $_SESSION['email'] = $email;
     $_SESSION['senha'] = $senha;
-    header("Location:../app/pagUsuario.php");
+    header("Location:../app/formaPag.php");
 }
 
 }
