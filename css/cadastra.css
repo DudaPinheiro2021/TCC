@@ -13,18 +13,18 @@ html{
 
 html,body{
   display: grid;
-  height: 100%;
-  width: 100%;
   place-items: center;
   background-color: #F6D5B6;
 }
 
 
 .questionario{
-  max-width: 390px;
+  width: 40rem;
+  height: 60rem;
+  margin-top: 3rem;
   background: #ffffff;
   padding: 2rem;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
 }
 
 .questionario .titulo{
@@ -107,6 +107,62 @@ a[type="submit"]{
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
+
+
+
+.progresso {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 5rem;  
+  margin-top: 2rem;
+}
+
+.linha1, .linha2, .linha3{
+  background-color: #527471;
+  width: 5rem;
+  height: 0.5rem;
+  margin-top: 1.85rem;
+}
+
+.pessoa, .endereco, .formPag, .pedido{
+  width: 4rem;
+  height: 4rem;
+  background-color: #527471;
+  border-radius: 50%;
+  padding: 0.7rem;
+  color: #ffffff;
+}
+
+.endereco, .formPag, .pedido{
+  padding: 0.9rem;
+}
+
+
+.etapa1, .etapa2, .etapa3, .etapa4{
+  margin-top: 4rem;
+  line-height: 4rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.02rem;
+  color: #bebebe;
+}
+
+.etapa1{
+  margin-left: -0.6rem;
+}
+.etapa2{
+  margin-left: -1.4rem;
+}
+.etapa3{
+  margin-left: -1.9rem;
+}
+.etapa4{
+  margin-left: -0.7rem;
+}
+
 
 
 
